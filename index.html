@@ -1,16 +1,14 @@
 <!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
-		<title>Hyperspace by HTML5 UP</title>
+		<title>Mayfly</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Prompt&display=swap" rel="stylesheet">
 	</head>
 	<body class="is-preload">
 
@@ -19,10 +17,14 @@
 				<div class="inner">
 					<nav>
 						<ul>
+							<li><a href="#">
+                <img src="images/mayflyLogo.png" alt="logo" width="50px" height="50px">
+              </a></li>
 							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">Who we are</a></li>
-							<li><a href="#two">What we do</a></li>
-							<li><a href="#three">Get in touch</a></li>
+							<li><a href="#one">What is Mayfly?</a></li>
+							<li><a href="#two">Tech Talk</a></li>
+							<li><a href="#three">Team</a></li>
+							<li><a href="#four">Case Study</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -34,155 +36,214 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
-							<h1>Hyperspace</h1>
-							<p>Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />
-							and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p>
+							<h1>Mayfly</h1>
+							<p>An open-source tool for hosting high-compute, collaborative, and stateful apps in the browser.</p>
 							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Learn more</a></li>
+								<li><a href="#four" class="button scrolly">Case Study</a></li>
 							</ul>
 						</div>
 					</section>
 
 				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Sed ipsum dolor</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Feugiat consequat</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Ultricies aliquam</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>
+          <section id="one" class="wrapper style2 fade-up">
+            <div class="inner">
+              <h2>What is Mayfly?</h2>
+              <p>Mayfly uses a technology called session backends to overcome the low compute, low memory limitations of the browser.</p>
+              <div class="features">
+                <section>
+                  <span class="icon solid major fa-code"></span>
+                  <h3>Open Source</h3>
+                  <p>Mayfly is open source and available through npm. Mayfly comes with a CLI and dashboard.</p>
+                </section>
+                <section>
+                  <span class="icon solid major fa-cloud"></span>
+                  <h3>Auto Scaling</h3>
+                  <p>Mayfly adjusts capacity based on the number of user requests. It creates instances based on demand and terminates them automatically.</p>
+                </section>
+                <section>
+                  <span class="icon solid major fa-lock"></span>
+                  <h3>Security</h3>
+                  <p>Running instances are TLS secured with the ACME protocol.</p>
+                </section>
+                <section>
+                  <span class="icon solid major fa-layer-group"></span>
+                  <h3>PaaS</h3>
+                  <p>Mayfly is a platform as a service. Simply register your containerized application then launch it as a running instance.</p>
+                </section>
+              </div>
+            </div>
+          </section>
 
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>What we do</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>Lorem ipsum amet</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-lock"></span>
-									<h3>Aliquam sed nullam</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-cog"></span>
-									<h3>Sed erat ullam corper</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-desktop"></span>
-									<h3>Veroeros quis lorem</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-link"></span>
-									<h3>Urna quis bibendum</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-gem"></span>
-									<h3>Aliquam urna dapibus</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-							</div>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul>
-						</div>
-					</section>
+        <!-- Two -->
+          <section id="two" class="wrapper style3 fullscreen fade-up">
+            <div class="inner">
+              <h2>Tech Talk</h2>
+              <div class="youtube">
+                <iframe 
+                  id="tech-talk"
+                  src="https://www.youtube.com/embed/fjvILuvC2so?si=MhJOeCXKWrcJsAHC" 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  aspect-ratio="16/9";
+                  allowfullscreen=""></iframe>              
+              </div>
+              <ul class="actions">
+                <li><a href="#four" class="button">Learn more</a></li>
+              </ul>
+            </div>
+          </section>
 
 				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Get in touch</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-							<div class="split style1">
-								<section>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
-											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
-										</ul>
-									</form>
-								</section>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Address</h3>
-											<span>12345 Somewhere Road #654<br />
-											Nashville, TN 00000-0000<br />
-											USA</span>
-										</li>
-										<li>
-											<h3>Email</h3>
-											<a href="#">user@untitled.tld</a>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>(000) 000-0000</span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
+					<section id="three" class="wrapper style2 spotlights">
+						<section>
+							<a href="joshuawlindsay.dev" class="image main"><img src="images/joshuaHeadshot.jpg" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Joshua Lindsay</h2>
+									<p>Austin, TX</p>
+									<ul class="actions">
+										<li><a href="joshuawlindsay.dev" class="button">Website</a></li>
+										<li><a href="www.linkedin.com/in/joshuawlindsay" class="button">LinkedIn</a></li>
+										<li><a href="https://github.com/JoshuaWLindsay" class="button">GitHub</a></li>
 									</ul>
-								</section>
+								</div>
 							</div>
-						</div>
+						</section>
+						<section>
+							<a href="#" class="image main"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Nate Xu</h2>
+									<p>Arlington, VA</p>
+									<ul class="actions">
+										<li><a href="joshuawlindsay.dev" class="button">Website</a></li>
+										<li><a href="www.linkedin.com/in/joshuawlindsay" class="button">LinkedIn</a></li>
+										<li><a href="https://github.com/JoshuaWLindsay" class="button">GitHub</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="steveprice.dev" class="image main"><img src="images/steveHeadshot.png" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Steve Price</h2>
+									<p>Edmonton, AB</p>
+									<ul class="actions">
+										<li><a href="steveprice.dev" class="button">Website</a></li>
+										<li><a href="www.linkedin.com/in/stevePriceDev" class="button">LinkedIn</a></li>
+										<li><a href="https://github.com/stevePriceDev" class="button">GitHub</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image main"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Zach Kerner</h2>
+									<p>New York, NY</p>
+									<ul class="actions">
+										<li><a href="joshuawlindsay.dev" class="button">Website</a></li>
+										<li><a href="www.linkedin.com/in/joshuawlindsay" class="button">LinkedIn</a></li>
+										<li><a href="https://github.com/JoshuaWLindsay" class="button">GitHub</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
+
+				<!-- Four -->
+					<section id="four" class="wrapper fade-up">
+						<div class="inner">
+							<h1 id="four">Case Study</h1>
+              <h2 id="four">1 Introduction</h2>
+              <h3 id="four">1.1 What is Mayfly?</h3>
+                <p>Mayfly is an open-source tool for deploying high-compute, high-memory apps to the browser. It utilizes a technology called session backends to overcome the limitations of stateless architecture for browser-based programs. Mayfly offers a CLI and dashboard to create, terminate, and manage backends (instances).</p>
+                <p>In this case study we’ll examine how Mayfly was built, starting with the problem domain. We will explore alternative solutions, lay out the critical components of the underlying technology, and discuss existing solutions.</p>
+              <h2 id="four">2 Problem Domain</h2>
+              <h3 id="four">2.1 High Memory, High Compute (HMHC)</h3>
+                <p>High-memory high-compute (HMHC) apps have complicated data structures that are updated frequently. An online code editor is a good example of an HMHC app. Beneath a code editor lies an abstract syntax tree (AST) or hierarchical representation of the code’s structure. A code linter, which checks for syntactical mistakes, must take into account the architecture of an entire file and not just one or two lines in isolation.</p>
+                <p>Some HMHC apps offer rich graphics and user interfaces. Both types of HMHC apps - those with complex state structures and those with detailed graphics - generate a lot of data. This poses several problems for software developers.</p>
+              <h3 id="four">2.2 Desktop Applications</h3>
+                <p>In the past, developers offered their HMHC apps primarily as desktop applications. Desktop applications are designed for the specific operating system (OS) of the user. They are optimized to directly access the central processing unit (CPU), the graphics processing unit (GPU), and the native memory of the user's computer, making them well positioned to deal with the vast volumes of data produced by HMHC apps. They are able to store data locally which means that the transfer of data in and out of the application is independent of the user’s internet connection. This helps avoid the need to make repeated round trips to the web server.</p>
+                <p>As an environment, the desktop comes with certain limitations that have made developers look to other mediums for hosting their HMHC apps. Desktop applications require download. If a user wants to access the application on two different machines - let's say a work and home computer - she would need to download the application client on each machine. This becomes a problem for developers trying to drive engagement in an impatient age. Studies have shown that users lose interest when faced with load times of over three seconds. Users may search for a competitor's application instead of waiting minutes for the app to download and install.</p>
+              <h3 id="four">2.3 Browser Based Applications</h3>
+                <p>Unlike desktop applications, web apps are available immediately and do not require download. Once the user has a browser installed and a working internet connection they can access a web application through any device without waiting. The browser’s main drawback is limited power in memory and processing. Unlike the desktop, browser-based apps are not optimized around the operating system of the user. Browser apps are subject to sandbox and security restrictions that are not applied to standalone, desktop applications. Compared to the desktop, browser-based apps are less performant even on equivalent hardware.</p>
+              <h3 id="four">2.3.1 CRUD Apps</h3>
+                <p>The browser is well suited to accommodate traditional web applications whose stack - or structure - consists of a web server with some business logic, a front-end interface, and a database. Most interactions - create, read, update, delete (CRUD) - entail small changes to the application state. State refers to the data stored in memory needed for a full-functioning application. An online banking app, for example, requests a client’s balance and deposit amount to update the client’s account information. It is not necessary for the banking app to load the client’s entire transaction history in order to record a change in their balance. State change in traditional web applications is relatively simple. The amount of data required for each change of state is small. The low memory, low compute operations of a CRUD app match the low memory, low compute capabilities of the browser.</p>
+                <p>Complex applications require more data and save all that data within the State of the app.</p>
+                <p>A banking application requires minimal information to update your account information. More</p>
+              <h3 id="four">2.3.2 HMHC Apps in the Browser</h3>
+                <p>This alignment begins to break down when faced with the high memory, high compute demands of applications like an online code editor or 3D data explorer. These applications depend on complex state that is being continuously updated. Compared to CRUD applications, the underlying data structures are complicated and highly interdependent. A code editor, it may be recalled from above, takes into account the web of relationships between various lines of code, revising that web of relationships after every keystroke. In some scenarios the browser will be unable to manage changes in state or slow to load the graphical interface of a data visualizer program like Rill Data. This will lead to slow performance or an unresponsive app. Developers have experimented with a number of approaches to overcome the challenges of deploying their HMHC applications to the low memory, low compute environment of the browser. What follows is a brief tour of some potential approaches.</p>
+              <h2 id="four">3 Browser Based Apps: Alternative Approaches</h2>
+              <h3 id="four">3.1 Storage</h3>
+                <p>One class of approaches takes advantage of the storage capacity of the client’s browser. Developers can pass small pieces of data (cookies) between client and server to track state. More directly, browsers can be used as a kind of database or key-value store. localStorage is a JavaScript property that allows data to be saved in key-value pairs. Unlike cookies, data housed in localStorage persists after the user exits the browser. Neither cookies - capped at 4096 bytes - nor localStorage - intended for small memory outlays - can keep pace with the data throughput of high-compute, high-memory apps.</p>
+                <p>Cookies are capped at 4096 bytes. To handle high-compute apps, developers would need to break apart state data into thousands of cookies and reconstruct it client and server side.</p>
+              <h3 id="four">3.2 JavaScript Libraries</h3>
+                <p>To manage the large amount of data from HMHC apps - especially graphical apps - the next cluster of approaches relies on JavaScript libraries and APIs to manipulate or make changes to the DOM. The DOM is a representation of the web page interface in the form of a tree-like structure. The tree is composed of a series of interconnected nodes. Through manipulating the DOM JavaScript libraries and APIs, developers can manage the higher data throughputs of 3D graphics and complex state.</p>
+                <p>React is a JavaScript library designed to manipulate the virtual DOM, a lightweight copy of the actual DOM by restricting updates to the parts of the DOM that have changed. Updating only parts of the DOM saves on unnecessary reloads and leads to smoother performance. React can run into scaling issues when state becomes sufficiently complex.</p>
+                <p>React works with a Virtual DOM.</p>
+                <p>WebGL is a “JavaScript API for rendering high-performance interactive 2D and 3D graphics”. WebGL is available across a wide range of browsers and excels in displaying animations and simulations. It uses parallel processing to offload computation from the browser CPU to the client’s GPU.  WebGL is appropriate for applications that feature rich graphics. Non-graphically intense apps like code editors or collaborative apps would not benefit from the WebGL toolkit.</p>
+              <h3 id="four">3.3 Data Compression</h3>
+                <p>Since browsers struggle with high data throughput, another class of approaches emerges around the compression of data. Data compression is a process that reduces the size of transferred data while preserving the essential information and minimizing data loss. Data compression techniques enable browsers to parse quantities of data that were previously prohibitive. (Parsing is the process of turning data received from the server into the DOM - “painting the screen”) One example technology is WebAssembly.</p>
+                <p>WebAssembly compiles high-level languages like C++ or Rust into binary. This makes the transfer of data between client and server more efficient as binary code is significantly smaller than the equivalent file in a high-level language. With WebAssembly, complex and dynamic program state can be stored on the client machine. (Before WebAssembly, dynamic state was typically located on the web server). WebAssembly helps to extend the browser’s hosting capabilities to applications that would ordinarily be too large and too complex for it.</p>
+              <h3 id="four">3.4 Summary</h3>
+                <p>In this section, we examined a few approaches available to engineers looking to host their applications on the browser. Storage technologies like cookies and localStorage are lightweight but unable to handle large quantities of data. DOM solutions like React struggle under the weight of complex state. WebGL provides an answer to the specialized case of graphically intense programs. WebAssembly compresses code into binary but is forced to contend with the modest memory and processing power of the browser. We are in search of a performant alternative that enables developers to deploy their infrastructure off the browser as their applications are still accessible through it.</p>
+              <h2 id="four">4 Session Backends</h2>
+              <h3 id="four">4.1 Definition</h3>
+                <p>Session backends are a technology that allows developers to host their browser-accessible applications on hardware with higher memory and CPU. A session backend is a dedicated service, spun up on demand by an orchestrator to maintain complex state in high-compute, high-memory applications.</p>
+                <p>When a request is sent to the server, a session backend is spawned, which the user connects to.</p>
+                <p>Session backends are exposed to the internet through an endpoint generated by the orchestrator. They are capable of hosting a wide variety of applications from collaborative apps to data visualizers and 3D animators. Session backends are agnostic to their execution environment; they can be deployed on a virtual machine, as a container instance, or as a process in Rust. They depart from the traditional paradigm of stateless architecture, opting instead for stateful design.</p>
+              <h3 id="four">4.2 Stateful Architecture</h3>
+                <p>Stateful design overcomes many of the problems associated with hosting high-compute apps in the browser. Session backends offload computation from the browser to processes, virtual machines, or containers all of which are better equipped to handle the stream of data pouring in from apps with complex state. Since requests in stateless design are independent, each request is sent with contextualizing metadata. Stateful design avoids this by retaining context between requests. Browsers no longer need to repeatedly query the server to maintain state.</p>
+                <p>Stateful Design must persist the data from the same server. Stateless Design may connect to any server available.</p>
+              <h3 id="four">4.3 Drawbacks of Stateful Architecture</h3>
+                <p>Stateful design comes with certain drawbacks. Load balancing between servers is challenging as load balancers need to remember client-server assignments. It is harder to scale a stateful system - for instance by adding more servers - since client requests are tied to specific servers.</p>
+                <p>Requests must be routed to the same server that holds the user’s state</p>
+                <p>Handling failover is difficult in a stateful system. In a stateless system where servers are fungible, each server is equally capable of handling incoming requests. Since stateful design is built around unique client-server connections, challenges arise around how to gracefully handle failover when a specific server goes offline. Stateless systems are less sensitive to offline servers, as current or new requests can be handed off to any server.</p>
+                <p>Now that we’ve established the problem domain (high-compute apps in the browser) and a potential solution (session backends) our discussion moves to implementation of session backends as a way to facilitate high memory high compute apps in the browser.</p>
+              <h2 id="four">5 High-Level Challenges of Implementing Session Backends</h2>
+              <h3 id="four">5.1 The Three Layers</h3>
+                <p>To implement session backends, developers need to address three domains in their deployment infrastructure: computation, orchestration, and communication. Computation speaks to the challenge of provisioning sufficient compute power. Orchestration refers to the on-demand creation and termination of session backends. An orchestrator must spin up (create) and spin down (terminate) a session backend on command. Communication entails routing client traffic to the correct backend and establishing a persistent connection, kicking off the bidirectional flow of data between client and server.</p>
+              <h3 id="four">5.2 Computation Layer</h3>
+                <p>Applications require hardware. The computational power of the underlying hardware - be it a physical server or an EC2 instance - must provide enough computational power to meet the demands of the application. Session backends permit developers to offshore computational responsibility from the browser to provisioned machines, typically in the cloud. In the wild, software engineers have devised a number of approaches to supply their session backends with computational infrastructure.</p>
+              <h3 id="four">5.2.1 Examples</h3>
+                <p>One set of solutions makes use of cloud resources to ensure that session backends have access to sufficient CPU. For example, GitHub Codespaces links a user to a virtual machine that maintains state throughout the session. Users can save their work and resume at a later date. GitHub Codespaces warns users to push their code to a repository for long-term persistence, suggesting that virtual machine connections are terminated after a set period of inactivity.</p>
+                <p>Figma takes a different approach, fixing their number of servers and workers per server. Instead of relying on raw computing power, Figma utilizes Rust, a programming language with concurrent processes. Their engineering team noticed that workers would lock up around certain operations - like syncing in collaborative apps. Figma handed these ‘heavy workers’ off to a child process written in Rust that would communicate back to the server directly. This sped up serialization time by a factor of ten.</p>
+                <p>Figma’s Architecture</p>
+                <p>In this section we discussed a few methods developers have used to supply their browser based applications with compute power. Figma made use of processes in Rust to overcome locked workers and provide their collaborative apps with more peformant servers. GitHub looked to cloud infrastructure to power their code editors at scale. After ensuring their apps have sufficient compute power, developers of session backends must pivot to the problem of instance management. We need to design a scalable system that is responsive to user traffic.</p>
+              <h3 id="four">5.3 Orchestration Layer</h3>
+                <p>Session backends spin up (create) and spin down (terminate) backend instances on demand in a process called orchestration. An orchestrator responds to a client’s request for an instance (backend) and provides that client with a URL link to access it. The orchestrator detects backends that are no longer in use and spins them down automatically. Since unused instances consume system resources, session backends need a garbage collection mechanism. Without this, developers would need to provision redundant servers, harming system scalability.</p>
+              <h3 id="four">5.3.1 Examples</h3>
+                <p>At least three broad approaches can be discerned. One approach is on-demand server-focused. For example, GitHub CodeSpaces provisions virtual machines, exclusive for each user-based real-time request. Users activate a codespace through the GitHub dashboard after a short loading period while the CodeSpace’s orchestrator provisions and starts the virtual machine.</p>
+                <p>An example of Github Codespaces</p>
+                <p>Another approach is the fixed-server, process-oriented approach of Figma. Figma operates with a set number of servers and a set number of workers per server. Backends are managed through processes. When a process goes unused for a period, Figma’s orchestrator kills that process.</p>
+                <p>Last is the auto scaling approach. Servers scale up and down based on present demand. Agones, another company in the session backend space, centers their orchestrator around Kubernetes, a container orchestration technology. Users are given a “fleet” of servers responsive to the load of the hosted application. When demand is high, Agones spawns a sufficient number of servers to provide a resource base for the session backends. When demand is low, Agones reduces the number of servers to minimize the use of excess resources.</p>
+                <p>The best approach for backend orchestration is largely a question of specific use cases. The on-demand approach is the most technically straightforward but comes with a “cold start” or time delay for server setup. The fixed server approach may run into scaling issues if processes become locked or are used inefficiently. The auto scaling approach is the most technically demanding, involving the use of tools like Kubernetes but gives the developer precise control over cloud resources.</p>
+              <h3 id="four">5.4 Communication Layer</h3>
+                <p>Once session backends are created and provisioned in servers or processes, the deployer establishes a persistent connection between the backend and the client. This is an additional responsibility over and above a traditional load balancer in stateless architecture where the balancer can field new requests from clients and send them along to any server. User traffic must be consistently routed to the matching session backend so that data can flow back and forth between client and server. This is the communication layer.</p>
+              <h3 id="four">5.4.1 Examples</h3>
+                <p>Session backend providers must decide on a protocol before establishing a client-server connection. Agones uses UDP as its default protocol. UDP, or user datagram protocol, is aimed at real-time applications like games. UDP, unlike TCP, does not engage in a “handshake” before establishing a connection. As a connectionless protocol, UDP is suited for situations where accuracy can be sacrificed for speed.  It is more acceptable for users playing a game to experience frame loss than a delay between their action and response from the software (lag).</p>
+                <p>TCP requires a ‘handshake’ that takes time before sending the actual request. UDP sends the request to the receiver immediately.</p>
+                <p>Before we can provide our users with a bidirectional data stream, we need to route their request to the correct session backend which requires communication between the orchestration and compute layers. Agones uses the `hostPort` field in Kubernetes to route users to the correct node and pod housing the game server. Kubernetes uses ingress controllers that are like reverse proxies for container orchestrators, providing session affinity (sticky sessions) so that a client is sent to their respective container.</p>
+              <h3 id="four">5.5 Summary</h3>
+                <p>Session backend deployers set aside resources for hosted applications (computation), spin backends up and down (orchestration), and keep alive a persistent, stateful connection between client and server (communication). We saw various methods for approaching these problems. Next, we’ll look, on a lower level, at the possible solutions a team of engineers may use to implement a session backend deployer.</p>
+              <h2 id="four">6 Existing Solutions</h2>
+                <p>To deploy session backends, developers have a range of options from do-it-yourself container orchestration to open source software or fully managed products on AWS. Some of these options come ready-made at a significant monetary cost, others require setup.</p>
+              <h3 id="four">6.1 DIY</h3>
+                <p>For the do-it-yourself container approach, developers may want to consider an AWS service like ECS. ECS, or Elastic Container Service, is an AWS-managed container orchestrator for managing and scaling containers. Containers are packages of software - including software dependencies - ready to run in any environment. Developers must choose how to manage their containers’ compute resources. Developers who go the self-managing route will use Amazon’s virtual machines (EC2 instances) to provision compute resources. An alternative is ECS on AWS Fargate. With Fargate, Amazon manages the compute space for your containers, automatically scaling up or down in response to demand.</p>
+                <p>Along similar lines, developers can leverage other combinations of technology in the AWS ecosystem. One option would be to use EFS, or Elastic File System, is an AWS-managed file system that enables the storage of application and/or session state to create a stateful container instance. ECS coupled with Application Load Balancer offers the option to enable sticky sessions, ensuring a persistent connection between user and session backend.</p>
+                <p>Developers with a preference for application code over infrastructure may opt for a hosted service. AWS App Runner lets developers specify the CPU and memory resources for their containerized source code. It automates the orchestration, load balancing, and scaling of web applications, and allows developers to specify the number of concurrent requests for an instance (for session backends most cases would be satisfied with a single concurrent request). App Runner returns a URL for each instance and accommodates wildcard domains, allowing developers to send unique hostnames to users. It handles the communication between its orchestration and computation layers.</p>
+                <p>Developers may find that cloud deployment options, like those available on AWS are outside the scope of their enterprise. Some may pivot towards open source software that has already laid much of the groundwork for session backend deployment.</p>
+              <h3 id="four">6.2 Plane</h3>
+                <p>Plane is an open source container orchestrator created by Drifting in Space. It is built for web applications that “exceed the CPU and memory limits of the browser, run code that can’t be compiled to JavaScript/WebAssembly, but needs to keep application state in memory, and/or pixel-stream entire GUIs over WebRTC.” Users connect to launched container instances from the browser. A connection is established with the container instance over a protocol like WebSocket. This initiates a bidirectional data stream. Though open source, developers need to clear a number of significant hurdles before Plane is made ready for deployment. To address this, Drifting in Space created a hosted platform called Jamsocket.</p>
+              <h3 id="four">6.3 Jamsocket</h3>
+                <p>Jamsocket is a paid, serverless, hosted platform built on top of Plane, providing scheduling, DNS, certificates, and observability. With one API call, made through the CLI or dashboard Jamsocket spins up a session backend based on a container image registered by the user. Jamsocket offers free and paid tiers. Subscribers get access to a higher number of concurrent session backends with greater processing power on Jamsocket’s hosting infrastructure.</p>
+              <h3 id="four">6.4 Summary</h3>
+                <p>Developers have a range of options for implementing session backends. Those fluent in technologies like Kubernetes may elect to go down the container orchestration route. Developers more focused on application code will choose a hosted service. Some will look to open-source software like Plane. This is the route our team chose. We noticed a lack of options for developers who wanted to deploy session backends with minimal time spent on configuration and system infrastructure. Mayfly is an open-source tool, ready out of the box, to deploy high-compute, high-memory apps on the browser. In the following section, we demo Mayfly and then lay out the problems and tradeoffs we faced in development.</p>
+              </div>
 					</section>
 
 			</div>
@@ -191,7 +252,7 @@
 			<footer id="footer" class="wrapper style1-alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Team Mayfly. All rights reserved. 2023.</li>
 					</ul>
 				</div>
 			</footer>

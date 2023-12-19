@@ -116,7 +116,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.55);
-		font-family: Arial, Helvetica, sans-serif;
+		font-family: 'Prompt', Arial, Helvetica, sans-serif;
 		font-size: 16.5pt;
 		font-weight: normal;
 		line-height: 1.75;
@@ -171,6 +171,8 @@ input, select, textarea {
 	}
 
 	p {
+    font-family: 'josefin-sans', sans-serif;
+    font-size: 1.3em;
 		margin: 0 0 2em 0;
 	}
 
@@ -187,7 +189,7 @@ input, select, textarea {
 		}
 
 	h1 {
-		font-size: 2.75em;
+		font-size: 5em;
 	}
 
 		h1.major {
@@ -215,11 +217,11 @@ input, select, textarea {
 			}
 
 	h2 {
-		font-size: 1.75em;
+		font-size: 2.5em;
 	}
 
 	h3 {
-		font-size: 1.1em;
+		font-size: 1.8em;
 	}
 
 	h4 {
@@ -237,15 +239,15 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 
 		h1 {
-			font-size: 2em;
+			font-size: 5em;
 		}
 
 		h2 {
-			font-size: 1.25em;
+			font-size: 2.5em;
 		}
 
 		h3 {
-			font-size: 1em;
+			font-size: 1.8em;
 		}
 
 		h4 {
@@ -285,7 +287,7 @@ input, select, textarea {
 		background: rgba(255, 255, 255, 0.05);
 		border-radius: 0.25em;
 		border: solid 1px rgba(255, 255, 255, 0.15);
-		font-family: "Courier New", monospace;
+		font-family: 'Josefin-Sans', monospace;
 		font-size: 0.9em;
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
@@ -293,7 +295,7 @@ input, select, textarea {
 
 	pre {
 		-webkit-overflow-scrolling: touch;
-		font-family: "Courier New", monospace;
+		font-family: 'Josefin-Sans', monospace;
 		font-size: 0.9em;
 		margin: 0 0 2em 0;
 	}
@@ -2605,12 +2607,14 @@ input, select, textarea {
 
 		.image.main {
 			display: block;
-			margin: 0 0 3em 0;
+			margin: 0 0 0 0;
 			width: 100%;
 		}
 
 			.image.main img {
 				width: 100%;
+        width: auto;
+        max-height: 375px;
 			}
 
 /* List */
@@ -2677,12 +2681,16 @@ input, select, textarea {
 		padding-left: 0;
 	}
 
-		ul.actions li {
-			padding: 0 0 0 1em;
-			vertical-align: middle;
-		}
+  ul.actions li {
+    padding: 0 0 0 1em;
+    vertical-align: middle;
+  }
 
-		ul.actions.special {
+  ul.actions li a {
+    font-size: 14px;
+  }
+
+ul.actions.special {
 			-moz-justify-content: center;
 			-webkit-justify-content: center;
 			-ms-justify-content: center;
@@ -3256,7 +3264,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #b74e91;
+			background-color: #9C3556;
 		}
 
 		.wrapper.style3-alt {
@@ -3881,7 +3889,7 @@ input, select, textarea {
 	}
 
 		#intro p {
-			font-size: 1.25em;
+			font-size: 1.5em;
 		}
 
 			@media screen and (max-width: 980px) {
@@ -3895,7 +3903,7 @@ input, select, textarea {
 			@media screen and (max-width: 736px) {
 
 				#intro p {
-					font-size: 1em;
+					font-size: 1.5em;
 				}
 
 			}
@@ -3907,3 +3915,24 @@ input, select, textarea {
 			}
 
 		}
+
+    #tech-talk {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      }
+    
+    .youtube {
+      position: relative;
+      padding-bottom: 56.25%;
+      overflow: hidden;
+      margin-bottom: 35px;
+    }
+
+    #four {
+      background: #fff;
+      color: rgb(0, 0, 0);
+      /* padding: 50px; */
+    }
