@@ -1,1 +1,1 @@
-![Mayfly Logo](mayflyLogo.png)
+![Mayfly Logo](images/mayflyLogo.png)
