@@ -171,7 +171,7 @@ input, select, textarea {
 	}
 
 	p {
-    font-family: 'josefin-sans', sans-serif;
+    font-family: 'Prompt', sans-serif;
     font-size: 1.3em;
 		margin: 0 0 2em 0;
 	}
@@ -3935,10 +3935,6 @@ ul.actions.special {
       background: #fff;
       color: rgb(0, 0, 0);
       /* padding: 50px; */
-    }
-
-    p {
-      font-family: 'Prompt', sans-serif;
     }
     
     .center {
